@@ -1,6 +1,6 @@
 # Barbershop Website
 
-A fully responsive multi-page web application built with HTML5, CSS3, JavaScript, and Bootstrap 5.
+A fully responsive multi-page web application built with HTML, CSS, JavaScript, and Bootstrap 5.
 
 ## Pages
 - Home
@@ -12,11 +12,12 @@ A fully responsive multi-page web application built with HTML5, CSS3, JavaScript
 - Contact
 
 ## Technologies Used
-- HTML5
-- CSS3
-- JavaScript (ES6+)
+- HTML
+- CSS
+- JavaScript 
 - Bootstrap 5
 
-## Author
-Maxwell Mutari Mbugua
-Strathmore University — BICS 2E
+## STUDENT
+- Maxwell Mutari Mbugua
+- BICS 2E
+- 220882

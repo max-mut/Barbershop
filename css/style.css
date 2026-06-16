@@ -1,3 +1,13 @@
+/* ============================================
+   my shortcuts for colours to use— style.css
+   Colours :
+   Navy:      #0A1628
+   Mid-navy:  #1B2E4B
+   White:     #FFFFFF
+   Off-white: #F5F7FA
+   Gold:      #C9A84C
+   Light grey:#E8ECF0
+============================================ */
 /* RESET */
 * {
     margin: 0;
@@ -65,19 +75,19 @@ h1, h2, h3 {
 }
 
 /* HERO */
-.hero {
+.top{
     background: #0A1628;
     color: white;
     text-align: center;
     padding: 100px 20px;
 }
 
-.hero-heading {
+.top-heading {
     font-size: 3rem;
     margin-bottom: 20px;
 }
 
-.hero-sub {
+.top-sub {
     margin-bottom: 25px;
 }
 
@@ -105,7 +115,7 @@ h1, h2, h3 {
 
 /* MOBILE */
 @media (max-width: 768px) {
-    .hero-heading {
+    .top-heading {
         font-size: 2rem;
     }
 }

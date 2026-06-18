@@ -31,9 +31,109 @@
             </div>
         </div>
     </nav>
-    </body>
-   
-    <body>
+    
+    <!-- PAGE HEADER -->
+    <section class="top text-center py-5">
+        <div class="container">
+            <h1>Our Services</h1>
+            <p>Every cut is done with precision. Every client leaves sharp.</p>
+        </div>
+    </section>
+
+    <!-- FILTERS -->
+    <section class="py-4">
+        <div class="container text-center">
+            <h2 class="section-title mb-4">Filter by Category</h2>
+            <button class="btn btn-outline-dark m-1 active-filter" data-filter="all" onclick="filterServices('all')">All</button>
+            <button class="btn btn-outline-dark m-1" data-filter="cuts" onclick="filterServices('cuts')">Cuts</button>
+            <button class="btn btn-outline-dark m-1" data-filter="beard" onclick="filterServices('beard')">Beard</button>
+            <button class="btn btn-outline-dark m-1" data-filter="shave" onclick="filterServices('shave')">Shave</button>
+            <button class="btn btn-outline-dark m-1" data-filter="package" onclick="filterServices('package')">Packages</button>
+        </div>
+    </section>
+
+    <!-- SERVICES GRID -->
+    <section class="py-5">
+                <div class="container">
+            <div class="table-responsive">
+                <table class="table table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th>Service</th>
+                            <th>Description</th>
+                            <th>Duration</th>
+                            <th>Price (KSh)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="services-table">
+                        <tr data-category="cuts">
+                            <td>Classic Cut</td>
+                            <td>Clean scissor cut shaped to your head structure</td>
+                            <td>30 min</td>
+                            <td>500</td>
+                        </tr>
+                        <tr data-category="cuts">
+                            <td>Skin Fade</td>
+                            <td>Tight fade from skin up, blended to your preferred length on top</td>
+                            <td>45 min</td>
+                            <td>700</td>
+                        </tr>
+                        <tr data-category="cuts">
+                            <td>Taper Fade</td>
+                            <td>Gradual fade that keeps length while cleaning up the sides</td>
+                            <td>40 min</td>
+                            <td>650</td>
+                        </tr>
+                        <tr data-category="cuts">
+                            <td>Line Up</td>
+                            <td>Sharp edge definition on hairline, temples and sideburns</td>
+                            <td>20 min</td>
+                            <td>300</td>
+                        </tr>
+                        <tr data-category="beard">
+                            <td>Beard Trim</td>
+                            <td>Shape and trim to your beard's natural growth pattern</td>
+                            <td>20 min</td>
+                            <td>300</td>
+                        </tr>
+                        <tr data-category="beard">
+                            <td>Beard Shape Up</td>
+                            <td>Full beard sculpting with defined edges and clean neckline</td>
+                            <td>30 min</td>
+                            <td>450</td>
+                        </tr>
+                        <tr data-category="shave">
+                            <td>Hot Towel Shave</td>
+                            <td>Traditional straight razor shave with hot towel and aftershave</td>
+                            <td>40 min</td>
+                            <td>800</td>
+                        </tr>
+                        <tr data-category="shave">
+                            <td>Head Shave</td>
+                            <td>Full head shave with hot towel finish</td>
+                            <td>35 min</td>
+                            <td>600</td>
+                        </tr>
+                        <tr data-category="package">
+                            <td>Cut + Beard</td>
+                            <td>Classic cut paired with a full beard trim and shape</td>
+                            <td>60 min</td>
+                            <td>750</td>
+                        </tr>
+                        <tr data-category="package">
+                            <td>The Full Works</td>
+                            <td>Skin fade, beard shape up, hot towel shave and aftershave</td>
+                            <td>90 min</td>
+                            <td>1500</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+                        
+        
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/scripts.js"></script>
     </body>

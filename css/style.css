@@ -21,6 +21,8 @@ body {
     background: #F5F7FA;
     color: #0A1628;
     line-height: 1.6;
+    padding-top: 50px;
+   
 }
 
 h1, h2, h3 {
@@ -100,7 +102,7 @@ h1, h2, h3 {
 }
 
 /* FOOTER */
-.site-footer {
+.footer {
     background: #0A1628;
     color: white;
     text-align: center;

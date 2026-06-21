@@ -14,6 +14,8 @@
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">
+                <img src="images/comb and clippers.png" alt="SharpCuts logo"
+                  width="30" height="30" class="brand-logo">
                 <span class="brand-sharp">Sharp</span><span class="brand-cuts">Cuts</span>
             </a>
 
@@ -34,6 +36,9 @@
             </div>
         </div>
     </nav>
+
+
+    
 
     <!-- PAGE HEADER -->
     <section class="top text-center py-5">
@@ -63,6 +68,67 @@
             </p>
         </div>
     </section>
+
+
+    <form action="" method="post" class="contact-form">
+        <div class="row mb-3">
+            <div class="col-md-6 mb-3 mb-md-0">
+                <label for="full_name" class="form-label">Full Name:</label>
+                <input type="text" id="full_name" name="full_name" class="form-control"
+                    placeholder="Enter your name" required>
+            </div>
+            <div class="col-md-6">
+                <label for="phone" class="form-label">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" class="form-control"
+                    placeholder="Enter your phone number" required>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-md-6 mb-3 mb-md-0">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" id="email" name="email" class="form-control"
+                    placeholder="Enter your email" required>
+            </div>
+            <div class="col-md-6">
+                <label for="service" class="form-label">Service:</label>
+                <select id="service" name="service" class="form-select" required>
+                    <option value="">Select a Service</option>
+                    <option>Classic Cut</option>
+                    <option>Skin Fade</option>
+                    <option>Taper Fade</option>
+                    <option>Beard Trim</option>
+                    <option>Hot Towel Shave</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-md-6 mb-3 mb-md-0">
+                <label for="date" class="form-label">Preferred Date:</label>
+                <input type="date" id="date" name="date" class="form-control" required>
+            </div>
+            <div class="col-md-6">
+                <label for="time" class="form-label">Preferred Time:</label>
+                <input type="time" id="time" name="time" class="form-control" required>
+            </div>
+        </div>
+
+        <div class="row mb-4">
+            <div class="col-12">
+                <label for="notes" class="form-label">Additional Notes:</label>
+                <textarea id="notes" name="notes" class="form-control" rows="3"
+                        placeholder="Any special requests or information"></textarea>
+            </div>
+        </div>
+
+        <div class="text-center">
+            <input type="submit" value="Book Appointment" class="btn-custom">
+        </div>
+    </form>
+
+
+ 
 
     <!-- CTA -->
     <section class="cta-banner">

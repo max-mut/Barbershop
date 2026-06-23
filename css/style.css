@@ -137,66 +137,9 @@ h1, h2, h3 {
 }
 
 
-/* ============================================
-   FORM STYLES (errors, success, form wrapper)
-   Used on: booking.html, contact.html
-============================================ */
-
-.contact-form {
-    background: white;
-    padding: 20px;
-    border: 1px solid #E8ECF0;
-}
-
-.error {
-    color: #d92626;
-    font-size: 0.9rem;
-    margin-top: 4px;
-    margin-bottom: 0;
-}
-
-.success {
-    color: #1B7A3D;
-    font-size: 1rem;
-    font-weight: bold;
-    margin-top: 10px;
-}
 
 
-/* ============================================
-   SIDEBAR (contact info box)
-   Used on: contact.html
-============================================ */
 
-.sidebar {
-    background: #F5F7FA;
-    padding: 20px;
-    border: 1px solid #E8ECF0;
-}
-
-.sidebar h2 {
-    font-size: 1.4rem;
-}
-
-.sidebar h3 {
-    font-size: 1.1rem;
-    margin-top: 20px;
-    color: #C9A84C;
-}
-
-.sidebar a {
-    color: #0A1628;
-    text-decoration: none;
-}
-
-.sidebar a:hover {
-    text-decoration: underline;
-}
-
-.map-wrapper iframe {
-    width: 100%;
-    border-radius: 4px;
-}
 
 /* TESTIMONIALS
    Used on: testimonials.html

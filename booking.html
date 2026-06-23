@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booking — SharpCuts</title>
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -18,11 +17,9 @@
                   width="30" height="30" class="brand-logo">
                 <span class="brand-sharp">Sharp</span><span class="brand-cuts">Cuts</span>
             </a>
-
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="navMenu">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
@@ -37,9 +34,6 @@
         </div>
     </nav>
 
-
-    
-
     <!-- PAGE HEADER -->
     <section class="top text-center py-5">
         <div class="container">
@@ -48,90 +42,131 @@
         </div>
     </section>
 
-
-
-    <!-- BOOKING INFO -->
-    <section class="py-5 bg-light">
-        <div class="container text-center">
-            <h2 class="section-title">Booking Information</h2>
-            <p class="mt-4">Appointments are available Monday to Saturday from 8:00 AM to 7:00 PM.</p>
-            <p>Walk-ins are welcome, but booking ahead helps us serve you on time.</p>
-            <p>We will contact you to confirm your appointment.</p>
-        </div>
-    </section>
-
-    <!-- BOOKING FORM -->
+    <!-- FORM + SIDEBAR -->
     <section class="py-5">
         <div class="container">
-            <div class="mx-auto" style="max-width: 700px;">
+            <div class="row g-4">
 
-                <form action="" method="post" id="bookingForm" class="contact-form">
-                    <div class="row mb-3">
-                        <div class="col-md-6 mb-3 mb-md-0">
-                            <label for="full_name" class="form-label">Full Name:</label>
-                            <input type="text" id="full_name" name="full_name" class="form-control"
-                                placeholder="Enter your name" >
-                            <p id="nameError" class="error"></p>
+                <!-- FORM SIDE -->
+                <div class="col-lg-7">
+                    <h2 class="section-title">Reserve Your Slot</h2>
+
+                    <form action="" method="post" id="bookingForm" class="contact-form mt-4">
+                        <div class="row mb-3">
+                            <div class="col-md-6 mb-3 mb-md-0">
+                                <label for="full_name" class="form-label">Full Name:</label>
+                                <input type="text" id="full_name" name="full_name" class="form-control"
+                                    placeholder="Enter your name">
+                                <p id="nameError" class="error"></p>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="phone" class="form-label">Phone Number:</label>
+                                <input type="tel" id="phone" name="phone" class="form-control"
+                                    placeholder="Enter your phone number">
+                                <p id="phoneError" class="error"></p>
+                            </div>
                         </div>
-                        <div class="col-md-6">
-                            <label for="phone" class="form-label">Phone Number:</label>
-                            <input type="tel" id="phone" name="phone" class="form-control"
-                                placeholder="Enter your phone number" >
-                            <p id="phoneError" class="error"></p>
+
+                        <div class="row mb-3">
+                            <div class="col-md-6 mb-3 mb-md-0">
+                                <label for="email" class="form-label">Email:</label>
+                                <input type="email" id="email" name="email" class="form-control"
+                                    placeholder="Enter your email">
+                                <p id="emailError" class="error"></p>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="service" class="form-label">Service:</label>
+                                <select id="service" name="service" class="form-select">
+                                    <option value="">Select a Service</option>
+                                    <option>Classic Cut</option>
+                                    <option>Skin Fade</option>
+                                    <option>Taper Fade</option>
+                                    <option>Beard Trim</option>
+                                    <option>Beard Shape Up</option>
+                                    <option>Hot Towel Shave</option>
+                                    <option>Head Shave</option>
+                                    <option>Cut + Beard</option>
+                                    <option>The Full Works</option>
+                                </select>
+                                <p id="serviceError" class="error"></p>
+                            </div>
                         </div>
+
+                        <div class="row mb-3">
+                            <div class="col-md-6 mb-3 mb-md-0">
+                                <label for="date" class="form-label">Preferred Date:</label>
+                                <input type="date" id="date" name="date" class="form-control">
+                                <p id="dateError" class="error"></p>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="time" class="form-label">Preferred Time:</label>
+                                <select id="time" name="time" class="form-select">
+                                    <option value="">Select a date first</option>
+                                </select>
+                                <p id="timeError" class="error"></p>
+                            </div>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col-12">
+                                <label for="notes" class="form-label">Additional Notes:</label>
+                                <textarea id="notes" name="notes" class="form-control" rows="3"
+                                        placeholder="Any special requests or information"></textarea>
+                            </div>
+                        </div>
+
+                        <p id="message" class="error text-center"></p>
+                        <p id="successMessage" class="success text-center"></p>
+
+                        <div class="text-center">
+                            <input type="submit" value="Book Appointment" class="btn-custom">
+                        </div>
+                    </form>
+                </div>
+
+                <!-- SIDEBAR -->
+                <div class="col-lg-5">
+                    <div class="sidebar">
+
+                        <h3>Why book ahead?</h3>
+                        <p>Walk-ins are welcome but slots fill up fast, especially on weekends. Booking ahead guarantees your time, your barber, and no waiting around.</p>
+
+                        <h3>What happens next?</h3>
+                        <p>Fill in the form and submit. We will call you on the number you provide to confirm your slot. Show up at your time and you go straight to the chair.</p>
+
+                        <h3>Opening Hours</h3>
+                        <p>Monday to Saturday: 8:00 AM to 7:00 PM</p>
+                        <p>Sunday: 10:00 AM to 4:00 PM</p>
+
+                        <h3>Popular Services</h3>
+                        <table class="table table-sm mt-2">
+                            <tbody>
+                                <tr>
+                                    <td>Classic Cut</td>
+                                    <td class="text-end">KSh 500</td>
+                                </tr>
+                                <tr>
+                                    <td>Skin Fade</td>
+                                    <td class="text-end">KSh 700</td>
+                                </tr>
+                                <tr>
+                                    <td>Beard Trim</td>
+                                    <td class="text-end">KSh 300</td>
+                                </tr>
+                                <tr>
+                                    <td>Hot Towel Shave</td>
+                                    <td class="text-end">KSh 800</td>
+                                </tr>
+                                <tr>
+                                    <td>The Full Works</td>
+                                    <td class="text-end">KSh 1,400</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a href="services.html" class="btn-custom d-inline-block mt-2">Full Price List</a>
+
                     </div>
-
-                    <div class="row mb-3">
-                        <div class="col-md-6 mb-3 mb-md-0">
-                            <label for="email" class="form-label">Email:</label>
-                            <input type="email" id="email" name="email" class="form-control"
-                                placeholder="Enter your email">
-                            <p id="emailError" class="error"></p>
-                        </div>
-                        <div class="col-md-6">
-                            <label for="service" class="form-label">Service:</label>
-                            <select id="service" name="service" class="form-select">
-                                <option value="">Select a Service</option>
-                                <option>Classic Cut</option>
-                                <option>Skin Fade</option>
-                                <option>Taper Fade</option>
-                                <option>Beard Trim</option>
-                                <option>Hot Towel Shave</option>
-                            </select>
-                            <p id="serviceError" class="error"></p>
-                        </div>
-                    </div>
-
-                    <div class="row mb-3">
-                        <div class="col-md-6 mb-3 mb-md-0">
-                            <label for="date" class="form-label">Preferred Date:</label>
-                            <input type="date" id="date" name="date" class="form-control">
-                            <p id="dateError" class="error"></p>
-                        </div>
-                        <div class="col-md-6">
-                            <label for="time" class="form-label">Preferred Time:</label>
-                            <select id="time" name="time" class="form-select">
-                                <option value="">Select a date first</option>
-                            </select>
-                            <p id="timeError" class="error"></p>
-                        </div>
-                    </div>
-
-                    <div class="row mb-4">
-                        <div class="col-12">
-                            <label for="notes" class="form-label">Additional Notes:</label>
-                            <textarea id="notes" name="notes" class="form-control" rows="3"
-                                    placeholder="Any special requests or information"></textarea>
-                        </div>
-                    </div>
-
-                    <p id="message" class="error text-center"></p>
-                    <p id="successMessage" class="success text-center"></p>
-
-                    <div class="text-center">
-                        <input type="submit" value="Book Appointment" class="btn-custom">
-                    </div>
-                </form>
+                </div>
 
             </div>
         </div>
@@ -139,9 +174,9 @@
 
     <!-- CTA -->
     <section class="cta-banner">
-        <div class="container">
-            <h2>Need help choosing a service?</h2>
-            <p>Visit our services page to see all available cuts and grooming options.</p>
+        <div class="container text-center">
+            <h2>Not sure which service to pick?</h2>
+            <p>Browse the full list with descriptions and prices before you book.</p>
             <a href="services.html" class="btn-custom mt-3 d-inline-block">View Services</a>
         </div>
     </section>

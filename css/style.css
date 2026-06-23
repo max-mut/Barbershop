@@ -22,7 +22,6 @@ body {
     color: #0A1628;
     line-height: 1.6;
     padding-top: 50px;
-   
 }
 
 h1, h2, h3 {
@@ -76,7 +75,7 @@ h1, h2, h3 {
     background: #b8963e;
 }
 
-/* HERO */
+/* TOP SECTION — page headers */
 .top{
     background: #0A1628;
     color: white;
@@ -100,6 +99,7 @@ h1, h2, h3 {
     border: 1px solid #ddd;
     text-align: center;
 }
+
 .cta-banner {
     background: #F5F7FA;
     text-align: center;
@@ -122,6 +122,111 @@ h1, h2, h3 {
 .footer-links a:hover {
     color: #C9A84C;
 }
+
+
+/* ============================================
+   FILTER BUTTONS
+   Used on: services.html, gallery.html
+============================================ */
+
+.active {
+    background: #C9A84C !important;
+    color: #0A1628 !important;
+    font-weight: bold;
+    border-color: #C9A84C !important;
+}
+
+
+/* ============================================
+   FORM STYLES (errors, success, form wrapper)
+   Used on: booking.html, contact.html
+============================================ */
+
+.contact-form {
+    background: white;
+    padding: 20px;
+    border: 1px solid #E8ECF0;
+}
+
+.error {
+    color: #d92626;
+    font-size: 0.9rem;
+    margin-top: 4px;
+    margin-bottom: 0;
+}
+
+.success {
+    color: #1B7A3D;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+/* ============================================
+   SIDEBAR (contact info box)
+   Used on: contact.html
+============================================ */
+
+.sidebar {
+    background: #F5F7FA;
+    padding: 20px;
+    border: 1px solid #E8ECF0;
+}
+
+.sidebar h2 {
+    font-size: 1.4rem;
+}
+
+.sidebar h3 {
+    font-size: 1.1rem;
+    margin-top: 20px;
+    color: #C9A84C;
+}
+
+.sidebar a {
+    color: #0A1628;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+}
+
+.map-wrapper iframe {
+    width: 100%;
+    border-radius: 4px;
+}
+
+/* TESTIMONIALS
+   Used on: testimonials.html
+*/
+.stars {
+    color: #C9A84C;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.testimonial-card {
+    background: white;
+    padding: 24px;
+    border: 1px solid #E8ECF0;
+    text-align: center;
+    height: 100%;
+}
+
+.testimonial-card p {
+    font-style: italic;
+    color: #4A5568;
+}
+
+.testimonial-card h6 {
+    font-weight: bold;
+    color: #0A1628;
+    margin-top: 16px;
+    margin-bottom: 4px;
+}
+
 
 /* MOBILE */
 @media (max-width: 768px) {

@@ -34,6 +34,7 @@
         </div>
     </nav>
 
+
     <!-- PAGE HEADER -->
     <section class="top text-center py-5">
         <div class="container">
@@ -56,13 +57,13 @@
                             <div class="col-md-6 mb-3 mb-md-0">
                                 <label for="full_name" class="form-label">Full Name:</label>
                                 <input type="text" id="full_name" name="full_name" class="form-control"
-                                    placeholder="Enter your name">
+                                    placeholder="Enter your name" required>
                                 <p id="nameError" class="error"></p>
                             </div>
                             <div class="col-md-6">
                                 <label for="phone" class="form-label">Phone Number:</label>
                                 <input type="tel" id="phone" name="phone" class="form-control"
-                                    placeholder="Enter your phone number">
+                                    placeholder="Enter your phone number" required>
                                 <p id="phoneError" class="error"></p>
                             </div>
                         </div>
@@ -71,12 +72,12 @@
                             <div class="col-md-6 mb-3 mb-md-0">
                                 <label for="email" class="form-label">Email:</label>
                                 <input type="email" id="email" name="email" class="form-control"
-                                    placeholder="Enter your email">
+                                    placeholder="Enter your email" required>
                                 <p id="emailError" class="error"></p>
                             </div>
                             <div class="col-md-6">
                                 <label for="service" class="form-label">Service:</label>
-                                <select id="service" name="service" class="form-select">
+                                <select id="service" name="service" class="form-select" required>
                                     <option value="">Select a Service</option>
                                     <option>Classic Cut</option>
                                     <option>Skin Fade</option>
@@ -95,12 +96,12 @@
                         <div class="row mb-3">
                             <div class="col-md-6 mb-3 mb-md-0">
                                 <label for="date" class="form-label">Preferred Date:</label>
-                                <input type="date" id="date" name="date" class="form-control">
+                                <input type="date" id="date" name="date" class="form-control" required>
                                 <p id="dateError" class="error"></p>
                             </div>
                             <div class="col-md-6">
                                 <label for="time" class="form-label">Preferred Time:</label>
-                                <select id="time" name="time" class="form-select">
+                                <select id="time" name="time" class="form-select" required>
                                     <option value="">Select a date first</option>
                                 </select>
                                 <p id="timeError" class="error"></p>

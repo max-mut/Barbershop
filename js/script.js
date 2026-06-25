@@ -365,7 +365,19 @@ document.addEventListener('DOMContentLoaded', function() {
         el.textContent = currentYear;
     });
 
+    /* ============================================
+        WELCOME PAGE
+        Used on: welcome.html only
+    ============================================ */
+    const welcome = document.querySelector(".welcome");
+    const welcomeContent = document.querySelector(".welcome-content");
 
+    if (welcome && welcomeContent) {
+        setTimeout(function() {
+            welcome.classList.add("visible");
+            welcomeContent.classList.add("visible");
+        }, 300);
+    }
     console.log("SharpCuts script loaded successfully.");
 
 }); // end DOMContentLoaded

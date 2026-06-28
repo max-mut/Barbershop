@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (value === "") {
             document.getElementById(errorId).textContent = "Phone number is required.";
             return false;
-        } else if (!/^0\d{9}$/.test(value)) {
+        } else if (!/^(0\d{9}|\+254\d{9})$/.test(value)) {
             document.getElementById(errorId).textContent = "Enter a valid number starting with 0, 10 digits total.";
             return false;
         }
@@ -57,12 +57,12 @@ document.addEventListener('DOMContentLoaded', function() {
         let visibleCount = 0;
 
         document.querySelectorAll("[data-filter]").forEach(button => {
-            button.classList.remove("active");
+            button.classList.remove("filter-active");
         });
 
         document
             .querySelector(`[data-filter="${category}"]`)
-            .classList.add("active");
+            .classList.add("filter-active");
 
         rows.forEach(row => {
             if (category === "all" || row.dataset.category === category) {
@@ -92,12 +92,12 @@ document.addEventListener('DOMContentLoaded', function() {
         let visibleCount = 0;
 
         document.querySelectorAll("[data-filter]").forEach(button => {
-            button.classList.remove("active");
+            button.classList.remove("filter-active");
         });
 
         document
             .querySelector(`[data-filter="${category}"]`)
-            .classList.add("active");
+            .classList.add("filter-active");
 
         items.forEach(item => {
             if (category === "all" || item.dataset.category === category) {
@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', function() {
             noResults.style.display = visibleCount === 0 ? "block" : "none";
         }
     }
-
+    
     window.filterGallery = filterGallery;
 
 

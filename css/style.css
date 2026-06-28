@@ -13,7 +13,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    margin: 0;
 }
 
 /* GLOBAL */
@@ -216,9 +215,10 @@ h1, h2, h3 {
     border-radius: 4px;
 }
 
-/* TESTIMONIALS
+/* =============================================
+TESTIMONIALS
    Used on: testimonials.html
-*/
+=============================================*/
 .stars {
     color: #C9A84C;
     font-size: 1.2rem;
@@ -300,6 +300,94 @@ h1, h2, h3 {
 }
 .about-img:hover {
     transform: scale(1.03);
+}
+/* ============================================
+   CONTACT PAGE EXTRAS
+   Used on: contact.html
+============================================ */
+
+
+.gold-divider {
+    width: 60px;
+    height: 3px;
+    background-color: #C9A84C;
+    border: none;
+    margin: 1rem auto 0;
+}
+
+.info-card {
+    background: white;
+    border-top: 4px solid #C9A84C;
+    border-radius: 8px;
+    padding: 2rem 1.5rem;
+    height: 100%;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(10, 22, 40, 0.12);
+}
+
+.info-card h5 {
+    font-weight: bold;
+    color: #0A1628;
+    margin-bottom: 0.5rem;
+}
+
+.info-card p,
+.info-card a {
+    color: #4A5568;
+    font-size: 0.95rem;
+    text-decoration: none;
+    line-height: 1.6;
+}
+
+.info-card a:hover {
+    color: #C9A84C;
+}
+
+.icon-wrap {
+    width: 56px;
+    height: 56px;
+    background-color: #0A1628;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+}
+
+.icon-wrap i {
+    color: #C9A84C;
+    font-size: 1.3rem;
+}
+
+/*=================================
+   SOCIAL STRIP
+ ================================ */
+.social-strip {
+    background-color: #F5F7FA;
+    text-align: center;
+}
+
+.social-strip p {
+    color: #0A1628;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+.social-icon {
+    color: #0A1628;
+    font-size: 1.6rem;
+    margin: 0 0.75rem;
+    display: inline-block;
+    transition: opacity 0.2s, transform 0.2s;
+}
+
+.social-icon:hover {
+    opacity: 0.7;
+    transform: scale(1.15);
 }   
 
 /* MOBILE */

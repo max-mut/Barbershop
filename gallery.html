@@ -52,7 +52,7 @@
             <h2 class="section-title mb-4">Browse by Category</h2>
 
             <!-- data-filter added to every button so JS can track active state -->
-            <button class="btn btn-outline-dark m-1 active"
+            <button class="btn btn-outline-dark m-1 filter-active"
                     data-filter="all"
                     onclick="filterGallery('all')">All</button>
 
@@ -67,6 +67,9 @@
             <button class="btn btn-outline-dark m-1"
                     data-filter="shave"
                     onclick="filterGallery('shave')">Shave</button>
+            <button class="btn btn-outline-dark m-1"
+                    data-filter="tools"
+                    onclick="filterGallery('tools')">Tools</button>
         </div>
     </section>
 
@@ -117,6 +120,16 @@
                     <h5 class="mt-3 text-center">Head Shave</h5>
                 </div>
 
+                <div class="col-md-4" data-category="tools">
+                    <img src="images/tools1.png" alt="Tool" class="gallery-img rounded">
+                    <h5 class="mt-3 text-center">Barber's Tool</h5>
+                </div>
+
+                <div class="col-md-4" data-category="tools">
+                    <img src="images/tools2.jpg" alt="Products" class="gallery-img rounded">
+                    <h5 class="mt-3 text-center">Hair Products</h5>
+                </div>
+
             </div>
 
             <p id="no-results" class="text-center mt-3" style="display: none;">
@@ -131,7 +144,7 @@
         <div class="container text-center">
             <h2>Ready for your next look?</h2>
             <p>Book your appointment and leave looking sharp.</p>
-            <a href="booking.html" class="btn-custom mt-3 d-inline-block">Book a Session</a>
+            <a href="booking.html" class="btn btn-custom ">Book a Session</a>
         </div>
     </section>
 

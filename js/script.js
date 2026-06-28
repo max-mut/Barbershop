@@ -1,6 +1,6 @@
 /* ============================================
    SHARPCUTS — script.js
-   Maxwell Mutari Mbugua — 220882
+  
 ============================================ */
 
 document.addEventListener('DOMContentLoaded', function() {
